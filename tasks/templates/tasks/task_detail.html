@@ -1,0 +1,29 @@
+{% extends "tasks/base.html" %}
+
+{% block title %}{{ task.title }} | Team Tasks{% endblock %}
+
+{% block content %}
+    <article>
+        <h1>{{ task.title }}</h1>
+
+        <dl>
+            <dt>ID</dt>
+            <dd>{{ task.id }}</dd>
+
+            <dt>Description</dt>
+            <dd>{{ task.description }}</dd>
+
+            <dt>Team</dt>
+            <dd>{{ task.team_id }}</dd>
+
+            <dt>Status</dt>
+            <dd>{{ task.get_status_display }}</dd>
+        </dl>
+    </article>
+
+    <p>
+        <a href="{% url 'tasks:list' %}">
+            Back to task list
+        </a>
+    </p>
+{% endblock %}

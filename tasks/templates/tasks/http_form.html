@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTTP Lab</title>
+</head>
+<body>
+    <h1>Create task request</h1>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <label>
+            Title
+            <input type="text" name="title">
+        </label>
+
+        <label>
+            Team ID
+            <input type="number" name="team_id">
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

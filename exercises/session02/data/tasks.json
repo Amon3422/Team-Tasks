@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Read HTTP basics",
+    "team_id": 10,
+    "done": false
+  },
+  {
+    "id": 2,
+    "title": "Write a test",
+    "team_id": 20,
+    "done": true
+  },
+  {
+    "id": 3,
+    "title": "Build a view",
+    "team_id": 10,
+    "done": true
+  }
+]

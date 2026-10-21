@@ -27,3 +27,18 @@ Thumbs.db
 
 #Answer md file
 appsec_answers/
+
+# SQLite temporary files
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Test coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Python tooling caches
+.ruff_cache/
+.mypy_cache/

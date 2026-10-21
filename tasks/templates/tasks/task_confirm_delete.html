@@ -1,0 +1,19 @@
+{% extends "tasks/base.html" %}
+
+{% block title %}Delete task | Team Tasks{% endblock %}
+
+{% block content %}
+    <h1>Delete task</h1>
+    
+    <p>Delete "{{ task.title }}"?</p>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <button type="submit">Delete task</button>
+    </form>
+    
+    <p>
+        <a href="{% url 'tasks:detail' task.pk %}">Cancel</a>
+    </p>
+{% endblock %}
